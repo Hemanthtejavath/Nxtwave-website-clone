@@ -1,0 +1,401 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.first-page{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 70%;
+  min-height: 70%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  object-fit: cover;
+}
+.bg-video-mobile{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 40%;
+  min-height: 40%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  object-fit: cover;
+
+}
+
+.first-page .content {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  color: white; /* or as needed */
+  background-image: linear-gradient(to right,rgb(8, 7, 29) ,transparent);
+
+}
+.inner-card{
+    margin-top: 40px;
+
+}
+.card-1-para{
+    font-family:sans-serif;
+    color: rgb(252, 252, 252);
+    padding-left: 190px;
+}
+.mic-img{        
+    height:65px;
+     
+}
+.inner-card-heading{
+    color: white;
+    font-family: sans-serif;
+    font-size: 52px;
+    font-weight: bold;
+}
+.amazon-logo{
+    height: 30px;
+    color: white;
+}
+.inner-button-card{
+    margin: 48px 0px 0px;
+    width: 100%;
+    overflow: hidden;
+}
+#claim-button{
+    color: #fff;
+    text-align: center;
+    background-color: #2563eb;
+    border-radius: 8px;
+    border:none;
+    width: 400px;
+    height: 44px;
+    padding: 12px 24px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#watch-button{
+    color: #fffbfb;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid white;
+    width: 400px;
+    height: 44px;
+    padding: 12px 24px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    background-color: inherit;
+    margin-bottom: 10px;
+}
+.inner-card-para{
+    font-size:20px;
+    color: white;
+    font-family: sans-serif;
+
+}
+/* BOOSTRAP CAROUSEL ITEM TO MAKE SLIDE  IN VERTICAL DIRECTION */
+
+ #carouselExampleSlidesOnly .carousel-inner {
+    height: 100%; /* or specify a fixed height */
+  }
+
+  #carouselExampleSlidesOnly .carousel-item {
+    transition: transform 0.4s ease-in-out;
+  }
+
+  /* Make the vertical transition */
+  #carouselExampleSlidesOnly.vertical .carousel-item-next,
+  #carouselExampleSlidesOnly.vertical .carousel-item-prev,
+  #carouselExampleSlidesOnly.vertical .carousel-item.active {
+    display: block;
+  }
+
+  #carouselExampleSlidesOnly.vertical .carousel-item-next {
+    transform: translateY(100%);
+  }
+
+  #carouselExampleSlidesOnly.vertical .carousel-item-prev {
+    transform: translateY(-100%);
+  }
+
+  #carouselExampleSlidesOnly.vertical .carousel-item.active {
+    transform: translateY(0);
+  }
+  .scrolling-page{
+    width: 100%;
+    background-color:#0b1629;
+    text-align: center;
+    padding-top:90px;
+    padding-bottom: 90px;
+    overflow: hidden;
+
+  }
+.scrolling-page-heading{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: white;
+}
+.scrolling-card{
+   padding: 30px;
+   display: flex;
+  animation: scroll-left  15s linear infinite;
+}
+/* key frames for scrolling animation */
+  @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+.scrolling-img{
+    height: 60px;
+    width:auto;
+   
+}
+.podcast-section{
+    width:100%;
+    background-image:
+    radial-gradient(at top left, rgba(0, 255, 0, 0.2), transparent 40%),
+    radial-gradient(at bottom right, rgba(255, 255, 0, 0.15), transparent 40%),
+    linear-gradient(to bottom, #0c1b35, #0c1b35);
+    font-family: sans-serif;
+    overflow: hidden;
+    padding-bottom: 80px;
+}
+.podcast-section-heading{
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight:700;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+.podcast-section-para{
+    color: #CBD5E1;
+    text-align: center;
+    font-size: 18px;
+}
+.button-card{
+    gap: 30px;
+    margin:40px;
+   
+}
+.podcast-button{
+    width: auto;
+    color: white;
+    background-color: inherit;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid white;
+    text-align: center;
+}
+.podcast-button:hover{
+    background-color: white;
+    color: black;
+}
+.podcast-innercard{
+    height: 520px;
+    width: 330px;
+    margin: 15px;
+    overflow: hidden;
+    background-color: #373e4f;
+    border-radius: 20px;
+    color: white;
+}
+.podcast-img{
+    width: 100%;
+}
+.podcast-heading{
+    color: white;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 550;
+
+}
+.podcast-para{
+    color: rgb(211, 207, 207);
+}
+.feedback-section{
+     width: 100%;
+     background-color: #0b1629;
+     text-align: center;
+     padding-bottom: 80px;
+}
+.fourth-page-heading{
+    color: white;
+    font-family:sans-serif;
+    font-size: 52px;
+    font-weight: bold;
+    padding: 50px;
+}
+.feedback-button {
+  background-color: #1f1f1f; /* dark background */
+  color: orange;
+  border: 1px solid orange;
+  border-radius: 40px;
+  padding: 15px 40px;
+  font-size: 25px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgba(255, 165, 0, 0.2);
+  background-clip: padding-box;
+}
+.feedback-card{
+    color: white;
+    height:auto;
+    width:auto;
+    background-color: rgb(57, 65, 73);
+    border-radius: 15px;
+    font-family: sans-serif;
+
+}
+.feedback-card h5{
+    font-family: sans-serif;
+}
+.feedback-img{
+    height: 60px;
+    margin: 20px;
+}
+.button{
+   color:white;
+   background-color:inherit;
+   border: none;
+}
+.newsletter-section{
+     width: 100%;
+     padding-top: 90px;
+     padding-bottom: 90px;
+     background-image:
+    radial-gradient(at top left, rgba(0, 255, 0, 0.2), transparent 40%),
+    radial-gradient(at bottom right, rgba(255, 255, 0, 0.15), transparent 40%),
+    linear-gradient(to bottom, #0c1b35, #0c1b35);
+}
+.newsletter-heading{
+    font-family: sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #F1F5F1;
+}
+.Contact-section{
+    width: 100%;
+    color: white;
+    background-color: #111721;
+    padding-top: 100px;
+    padding-bottom: 90px;
+   
+}
+.input{
+    background-color:rgb(87, 87, 103) ;
+    width:100%;
+    height:35px;
+    border-radius:10px;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+}
+.fifth-page-button{
+    background-color: #2563eb;
+    margin-top: 30px;
+    height:40px;
+    width: 100%;
+    border-radius:10px;
+    border: none;
+    padding: 10px;
+    color: white;
+    
+}
+.para{
+    color: white;
+    background-image:
+    radial-gradient(at top left, rgba(0, 255, 0, 0.2), transparent 40%),
+    radial-gradient(at bottom right, rgba(255, 255, 0, 0.15), transparent 40%),
+    linear-gradient(to bottom, #0c1b35, #0c1b35);
+    padding: 40px 0px 40px 0px;
+    text-align: left;
+    font-size:20px;
+    padding-left:90px;
+    width: 100%;
+}
+.footer{
+    width: 100%;
+    color: white;
+    background-color: #0b1629;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.nxt-img{
+    height: 80px;
+}
+.footer-card{
+    width:100%;
+    color: rgb(182, 174, 174);
+    font-family: sans-serif;
+   
+}
+.footer-heading{
+    font-weight: 700;
+}
+.quick-link{
+    list-style-type:none;
+    padding: 15px;
+    line-height:40px;
+}
+.quick-link li:hover{
+    color: white;
+
+}
+.payment-card{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+}
+.footer-line{
+    height:2px;
+    background-color: rgb(66, 76, 77);
+  
+}
+.footer-policy-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:50px;
+    content: wrap;
+}
+.footer-img{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.footer-list-card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: #697687;
+    font-family: sans-serif;
+  
+}
+.footer-list-card h6:hover{
+    color: white;
+}
